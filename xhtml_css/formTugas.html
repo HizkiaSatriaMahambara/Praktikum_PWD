@@ -1,0 +1,96 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Reservation Hotel Room</title>
+  <link rel="stylesheet" href="Reservation.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Reservation Hotel Room</h1>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Personal Data</legend>
+
+        <p>Name<br />
+          <input type="text" id="name" name="name" />
+        </p>
+
+        <p>Gender<br />
+          <input type="text" id="gender" name="gender" />
+        </p>
+
+        <p>Email Address<br />
+          <input type="email" id="email" name="email" />
+        </p>
+
+        <p>Telp Number<br />
+          <input type="text" id="telp" name="telp" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Reservation Room</legend>
+        <p>Reservator Name<br />
+          <input type="text" id="reservator" name="reservator" />
+        </p>
+
+        <p>Booking Date<br />
+          <input type="date" id="bookdate" name="bookdate" />
+        </p>
+
+        <p>Room Type<br />
+          <select id="roomtype" name="roomtype">
+            <option value="deluxe">Deluxe</option>
+            <option value="suite">Suite</option>
+            <option value="family">Family</option>
+          </select>
+        </p>
+
+        <p>Bed Type<br />
+          <select id="bed" name="bed">
+            <option value="single">Single Bed</option>
+            <option value="double">Double Bed</option>
+          </select>
+        </p>
+
+        <p>Breakfast<br />
+          <input type="radio" id="withbf" name="breakfast" value="with" />
+          <label for="withbf">With Breakfast</label>
+          <input type="radio" id="withoutbf" name="breakfast" value="without" />
+          <label for="withoutbf">Without Breakfast</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment</legend>
+
+        <p>Check-in Date<br />
+          <input type="date" id="checkin" name="checkin" />
+        </p>
+
+        <p>Check-out Date<br />
+          <input type="date" id="checkout" name="checkout" />
+        </p>
+
+        <p>Payment Method<br />
+          <select id="payment" name="payment">
+            <option value="cash">Cash</option>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+          </select>
+        </p>
+      </fieldset>
+
+    <p>
+      <input type="submit" value="Submit" />
+    </p>
+
+    </form>
+  </div>
+</body>
+
+</html>
